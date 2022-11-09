@@ -204,6 +204,12 @@ second.set(seconds[0])
 secs = OptionMenu(frame, second, *seconds)
 secs.pack(side=LEFT)
 
+#Time required to set the alarm clock:
+
+hourTime= Entry(clock,textvariable = hour,bg = "pink",width = 15).place(x=110,y=30)
+minTime= Entry(clock,textvariable = min,bg = "pink",width = 15).place(x=150,y=30)
+secTime = Entry(clock,textvariable = sec,bg = "pink",width = 15).place(x=200,y=30)
+
 Button(root, text="Set Alarm", font=("Helvetica 15"), command=Threading).pack(pady=20)
 
 root.mainloop()
